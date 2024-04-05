@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Portfolio - Caitlin Naylor </title> 
+		<link rel = "stylesheet" type = "text/css" href = "style.css">
+		<script src = "myscripts.js"></script>
+		<script src="lottie.js" type="text/javascript"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+
+
+		
+	</head>
+	
+	<body id = "home">
+	<!-- Header - same on every page other than which page is 'active' -->
+		<div id = "header">
+		  
+		  <ul id = "nav">
+				<li><a id = "active" href= "index.html"> Home </a></li>
+				<li> | </li>
+				<li><a href= "projects.html"> Projects </a> </li>
+		  </ul>
+		  
+		</div>
+		
+		<br>
+		<button onclick="goToTop()" id="topBtn" title="Go to top">^</button>
+		<table id = "tableLanding">
+			<tr>
+				<td rowspan = "1"><h4>Hi, nice to meet you! I'm</h4></td>
+				<td rowspan = "3" id = 'lottie-container'> 
+				
+			</tr>
+			<tr>
+				<td rowspan = "1"><h1> Caitlin Naylor</h1></td>
+			</tr><tr>
+				<td rowspan = "1"> <p> I'm a final year computer science student at Victoria University of Wellington.
+				I'm looking for a software development role - ideally a full-time graduate or permanent position - 
+				starting November 2024 or later. While I prefer to stay in Wellington, I am willing to relocating for the right opportunity. </p></td>
+			</tr><tr>
+				<td>
+					<button id = "contactScroll" onclick = "scrollToSection('titleContact')"> Contact Me </button>
+					<button id = "projectsBtn"> Projects </button>
+				</td>
+				
+			</tr>
+			<tr>
+				<td><h5> Contents below: </h5>
+				<ul id = "contents">
+				<li><a href = "#tableFAQ">FAQ</a></li>
+				<li><a href = "#tableAwards">Awards in Tech</a></li>
+				<li><a href = "#titleJobs">Previous Jobs</a></li>
+				
+		  </ul></td>
+			</tr>
+		</table>
+		
+		<!-- FAQ -->
+		 <table id = "tableFAQ">
+			<tr>
+				<th id = "titleFAQ"> <h3> FAQ </h3></th>
+			</tr><tr>
+				<td class = "faqs" onclick = "getAnswer('hireA', 'hireArrow')"> Why should you hire me? <span id = "hireArrow"> v <span> </th>
+			</tr><tr>
+				<td class = "faqA" id = "hireA"> Answer Here </td>
+			</tr><tr>
+				<td class = "faqs" onclick = "getAnswer('difA', 'difArrow')"> What makes me different to others? <span id = "difArrow"> v <span></td>
+			</tr><tr>
+				<td class = "faqA" id = "difA"> Answer Here </td>
+			</tr><tr>
+				<td class = "faqs" onclick = "getAnswer('fieldA', 'fieldArrow')"> Why did I choose this field? <span id = "fieldArrow"> v <span></td>
+			</tr><tr>
+				<td class = "faqA" id = "fieldA"> Answer Here </td>
+			</tr><tr>
+				<td class = "faqs" onclick = "getAnswer('persoA', 'persoArrow')"> What type of person am I? aka My Personality Explained <span id = "persoArrow"> v <span></td>
+			</tr><tr>
+				<td class = "faqA" id = "persoA"> Answer Here </td>
+			</tr>
+			
+		</table
+		
+		<!-- Awards -->
+		<table id = "tableAwards">
+			<tr>
+				<th colspan = '3' id = "titleAwards"><h3>Awards in Tech</h3></th>
+			</tr>
+			<tr>
+				<td>
+					<table class = "award" id = "tableHitech">
+						<tr>
+							<th><h4>Hi-Tech Foundation Leading Light Scholarship</h4></th>
+						</tr>
+						<tr>
+							<td><p> In 2023, I won this scholarship from the Hi-Tech Foundation for academic excellence and career trajectory. <br><br>This award also gave me the opportunity to attend the Hi-Tech Awards that year.</p></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table class = "award" id = "tableAgtech">
+						<tr>
+							<th><h4>NZ Agrifood Week Agtech Hackathon Winner<br><hr>Palmerston North Mayors' Innovation Award</h4></th>
+						</tr>
+						<tr>
+							<td><p>Over around 10 hours, two friends and I competed in an AgTech Hackathon against people of all ages and experiences. <br><br>Our pitched idea of AI Goggles to help harvesters identify disease in fruit managed to win the competition, with the judges particularly noting the quality of our presentation. <br><br>We also gained the attention of Zespri who later visited our school to meet us and the Mayor Grant Smith, whose award we had also won. </p></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table class = "award" id = "tableGold">
+						<tr>
+							<th><h4>Royal Society Gold Team CREST</h4></th>
+						</tr>
+						<tr>
+							<td><p>Over 18 months, my friend and I created a HTML/CSS/JavaScript template for a school navigational website that can be easily adjusted to fit various schools and completed the multiple reports and presentations required to gain this award. <br><br>Read more about the project <a href = "">here</a> or check out the Royal Society <a href="https://www.royalsociety.org.nz/what-we-do/funds-and-opportunities/past-participants-of-funds-and-opportunities/crest-programme-alumni/gold-crest-recipients/2021-caitlin-naylor-and-jordan-daubney/">website</a>. </p></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table class = "award" id = "tableSilver">
+						<tr>
+							<th><h4>Royal Society Silver Team CREST Challenge<br><hr>Tahi Rua Toru Tech Regional Winner 2019</h4></th>
+						</tr>
+						<tr>
+							<td><p>To earn Silver Team CREST Challenge, my friends and I created a navigational app for our high school, which we published the app to both the app and play store for students, teachers and visitors to the school to use. <br><br> The app also won the Senior Secondary category at our regional 123Tech Competition.<br><br>Check out the app <a href="https://play.google.com/store/apps/details?id=nz.school.pnghs.tgerbich.pnghsnavigationalappcopycopy&hl=en_NZ&gl=US">here</a> or read more about the project <a href="">here.</a></p></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table class = "award" id = "tableBronze">
+						<tr>
+							<th><h4>Royal Society Bronze & Silver Team CREST<br><hr>Tahi Rua Toru Tech Regional Winner 2018</h4></th>
+						</tr>
+						<tr>
+							<td><p>We created an app that helps you keep track of lost items. This, paired with a report, earned us both Bronze and Silver CREST and also won us our Regional Senior Secondary Category in the 2018 123Tech Competition. <br><br> To read more about the project click <a href="">here.</a></p></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table class = "award" id = "tableFair">
+						<tr>
+							<th><h4>Manawatu Science Fair 2019</h4></th>
+						</tr>
+						<tr>
+							<td><p>We reused our Bronze/Silver Team CREST item-finding app in the Manawatu Science Fair and won four awards: <br> - UCOL Faculty of Humanities and Business - ICT Innovation Prize <br>- Fonterra High Distinction Prize <br>- Massey University Enterprise Award <br>- Massey University Internship award<br><br>To read more about the project click <a href="">here.</a></p></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		
+		<!-- Jobs -->
+		<h3 id = "titleJobs">Jobs</h3>
+		<table id = "tableJobs">
+			<tr><td>
+				<table class = "job" id = "tableWoolworths">
+					<tr>
+						<td class = "jobDate" ><p>2022-Present</td>
+					</tr>
+						<td><h4>Woolworths</h4> </td>
+					<tr>
+					</tr>
+						<td id = "wwtext"><p>As an online assistant, I pack online orders for customers and answer any queries/issues they may have regarding those orders. This requires great time and stress self-management skills to meet the constant deadlines, precision to ensure all quality requirements are met, as well as technological competency and communication skills. </td>
+					<tr>
+					</tr>
+				</table>
+				</td>
+				<td>
+				<table class = "job" id = "tableBP">
+					<tr>
+						<td class = "jobDate" ><p>2022-2023</td>
+					</tr>
+					<tr> 
+						<td><h4>BP</h4></td>
+					</tr>
+					<tr>
+						<td id = "bptext" ><p>I worked as a customer service representative meaning I worked the checkout, filled shelves, or cleaned depending on what tasks I had been assigned that shift. From this, I gained confidence, social and communication skills, and organisation skills. </p></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+
+		<h3 id = "titleContact" > Contact Me </h3>
+		
+		<p class = "contactBold">Email:</p> <p style="display: inline-block;">	<a href="mailto:caitlinaylor@gmail@gmail.com">caitlinaylor@gmail.com </a></p> <br>
+		<p class = "contactBold"> Github: </p> <p style="display: inline-block;"> <a href = "https://github.com/caitlinnaylor">https://github.com/caitlinnaylor</a> </p> <br>
+		<p class = "contactBold"> Linkedin: </p> <p style="display: inline-block;"> <a href = "https://www.linkedin.com/in/caitlin-naylor-93b7b6204">https://www.linkedin.com/in/caitlin-naylor-93b7b6204</a> </p><br>
+		<p class = "contactBold"> Summer of Tech Profile: </p> <p style="display: inline-block;"> temporarily N/A</p><br>
+		
+		<footer>
+			
+			<h8> &copy; 2024. All code (HTML/CSS/JavaScript) and graphics (Lottie and Adobe Illustrator/After Effects) were created by Caitlin Naylor. No third-party website builders were used. </h8>
+			<div id = 'flowers'>
+		</footer>
+	
+	</body>
+	
+	
+<html>
+
+<script>
+	lottie.loadAnimation({
+	  container:document.getElementById('lottie-container'), // the dom element that will contain the animation
+	  renderer: 'svg',
+	  loop: true,
+	  autoplay: true,
+	  path: 'https://lottie.host/8cf4695c-eb0e-499b-a03a-8485989372a1/iFWmGq7Gqd.json' // the path to the animation json
+	});
+	
+	lottie.loadAnimation({
+	  container:document.getElementById('flowers'), // the dom element that will contain the animation
+	  renderer: 'svg',
+	  loop: true,
+	  autoplay: true,
+	  path: 'https://lottie.host/9f4e760e-6196-4742-96ac-443cf79d2f33/fdzwJTwoF9.json' // the path to the animation json
+	});
+	
+	
+	// Get the button
+	let mybutton = document.getElementById("topBtn");
+
+	// When the user scrolls down 150px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+</script>

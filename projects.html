@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Portfolio - Caitlin Naylor </title> 
+		<link rel = "stylesheet" type = "text/css" href = "style.css">
+		<script src = "myscripts.js"></script>
+		<script src="lottie.js" type="text/javascript"></script>
+
+		
+	</head>
+	
+	<body id = "projects">
+	<!-- Header - same on every page other than which page is 'active' -->
+		<div id = "header">
+		  
+		  <ul id = "nav">
+				<li><a href= "index.html"> Home </a></li>
+				<li> | </li>
+				<li><a id = "active" href= "projects.html"> Projects </a> </li>
+		  </ul>
+		  
+		</div>
+		<button onclick="goToTop()" id="topBtn" title="Go to top">^</button>
+		
+		<h3 id = "projectsHeading"> Personal Projects </h3>
+		<table id = "tableLanguageFilter">
+			<tr>
+				<td>
+					<button class = "languageBtn" id = "javaBtn"> Java </button>
+					<button class = "languageBtn" id = "websiteBtn"> HTML/CSS/Javascript </button>
+					<button class = "languageBtn" id = "websiteBtn"> Python </button>
+					<button class = "languageBtn" id = "otherBtn"> Other </button>
+				</td>
+			</tr>
+		</table>
+		<table id = "tableProjects">
+			<tr>
+				<td>
+				</td>
+				<td>
+				</td>
+				<td>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				</td>
+				<td>
+				</td>
+				<td>
+				</td>
+			</tr>
+		</table>
+		
+		<h3 id = "titleContact" > Contact Me </h3>
+		
+		<p class = "contactBold">Email:</p> <p style="display: inline-block;">	<a href="mailto:caitlinaylor@gmail@gmail.com">caitlinaylor@gmail.com </a></p> <br>
+		<p class = "contactBold"> Github: </p> <p style="display: inline-block;"> <a href = "https://github.com/caitlinnaylor">https://github.com/caitlinnaylor</a> </p> <br>
+		<p class = "contactBold"> Linkedin: </p> <p style="display: inline-block;"> <a href = "https://www.linkedin.com/in/caitlin-naylor-93b7b6204">https://www.linkedin.com/in/caitlin-naylor-93b7b6204</a> </p><br>
+		
+		<footer>
+			
+			<h8> &copy; 2024. All code (HTML/CSS/JavaScript) and graphics (Lottie and Adobe Illustrator/After Effects) were created by Caitlin Naylor. No third-party website builders were used. </h8>
+			<div id = 'flowers'>
+		</footer>
+	
+	</body>
+	
+	
+<html>
+
+<script>
+	lottie.loadAnimation({
+	  container:document.getElementById('flowers'), // the dom element that will contain the animation
+	  renderer: 'svg',
+	  loop: true,
+	  autoplay: true,
+	  path: 'https://lottie.host/9f4e760e-6196-4742-96ac-443cf79d2f33/fdzwJTwoF9.json' // the path to the animation json
+	});
+	
+	// Get the button
+	let mybutton = document.getElementById("topBtn");
+
+	// When the user scrolls down 150px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+</script>
